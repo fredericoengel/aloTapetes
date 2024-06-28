@@ -1,0 +1,178 @@
+* {
+  font-family: 'light';
+  
+}
+
+#container {
+  gap: 3.5rem;
+}
+
+.img-1{
+  display:block;
+  max-width: 100%;
+  height: auto;
+   
+}
+
+
+
+.slider{
+  
+  position: absolute;
+  align-items:center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  
+}
+
+h1::after{
+  font-weight: 500;
+  color: rgb(30,144,255);
+  position: absolute;
+  content: '';
+  width: 15rem;
+  height: 5px;
+  background-color: rgb(255,215,0);
+  display: flex;
+  place-items: center;
+  border-radius: 3px;
+}
+.coluna-1 label{
+  display: flex;
+  font-size: 1.1rem;
+  color: #f8fafc;
+  background-color:rgb(30,144,255);
+  width: 100%;
+  font-weight: 500;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+
+.coluna-2{  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgb(30,144,255,50%);
+  padding: 0.3rem;
+  border-radius: 2px;
+  margin-top: 3px;
+}
+.coluna-2 input {
+  
+  background-color: transparent;
+  border: none;
+  width: 200px;
+  font-size: 1.3rem;
+  color: #f8fafc;
+  padding: 0 0.5rem;
+}
+
+.coluna-2 input::-webkit-outer-spin-button,
+.coluna-2 input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.coluna-2 input:focus {
+  outline: none;
+}
+.coluna-2 input::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 4;
+}
+
+#botao-1 {
+  margin: 0 200px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: rgb(30,144,255,10%);
+  color: rgb(30,144,255);
+  padding: 0rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*#area{
+  /*width: 100%;
+  /*display: flex;
+  /*gap: 3rem;
+  /*align-items: center;
+  /*border-top: 1px solid #ffffff34;
+  /*padding: 0.75rem 10;*/
+/*}*/
+
+#input-3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.50rem;
+}
+/*#input-3 span:last-child{
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}*/
+/*
+#dados{
+  width: 30rem;
+}*/
+
+
+
+
+/*.icone-1 {
+  background:url(../icones/ruler.svg);
+  background-repeat: no-repeat;
+  
+  
+  
+}*/
+
+
+/*LOCAL DAS FONTES ECOLHIDAS*/
+@font-face {
+  font-family: "light";
+  src: url(/fonts/SourceCodePro-VariableFont_wght.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*AQUI COMEÇA A CONFIGURAÇÃO PARA TELAS DO TAMANHA DE ATÉ 450 PIXELS.*/
+@media (max-width: 450px) {
+    h1 {
+      color:rgb(30,144,255);
+    }
+  
+    h2 {
+      color: green;
+    }
+  }
+  
+  /*AQUI COMEÇA A CONFIGURAÇÃO PARA TODAS AS TELAS DO TAMANHA DE 768px ATÉ 1024px PIXELS.*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      color:rgb(30,144,255);
+    }
+  
+    h2 {
+      color: blue;
+    }
+  }
+  
+  /* QUANDO ESTIVER NA HORIZONTAL*/
+  @media (orientation: landscape) {
+    h1 {
+      color:rgb(30,144,255);
+    }
+    h2 {
+      color: orange;
+    }
+  }
+  
